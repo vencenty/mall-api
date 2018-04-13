@@ -29,7 +29,7 @@ class Database
     {
         // 千河商城数据库
         if( $dbname == 'we7' ){
-            $link = new PDO( 'mysql:host=rm-2zen83c2mci6syit6o.mysql.rds.aliyuncs.com;dbname=we7', 'mxg2', 'Bijiao2@', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION) );
+            $link = new PDO( 'mysql:host=*;dbname=we7', '*', '*', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION) );
             $link->query( "set names utf8" );
         }elseif( $dbname == 'default' ){
             $link = new PDO( 'mysql:host=localhost;dbname=hrwx', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION) );
